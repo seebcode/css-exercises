@@ -8,12 +8,21 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: large;
+  font-weight: 900;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -26,4 +35,47 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 400px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 48px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.sidebar-and-cards {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebar {
+  height: 90vh;
+  width: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
